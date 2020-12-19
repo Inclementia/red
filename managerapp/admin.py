@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from managerapp.models import Managers
+
+admin.site.register(Managers)

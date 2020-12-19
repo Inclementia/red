@@ -1,7 +1,15 @@
 {% extends 'managerapp/base.html' %}
 
 {% block content %}
-<h2>
-    Список менеджеров
-</h2>
+    <h2>Список менеджеров</h2>
+    <div class="manager-menu">
+        <ol>
+        {%  for item in managers  %}
+            <li>
+                    {{ item }}
+            </li>
+        {% endfor %}
+        </ol>
+    </div>
+
 {% endblock %}
